@@ -10,6 +10,7 @@
 		AE3730561C16EE22008DF6EC /* ios_library.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = AE3730551C16EE22008DF6EC /* ios_library.h */; };
 		AE3730581C16EE22008DF6EC /* ios_library.m in Sources */ = {isa = PBXBuildFile; fileRef = AE3730571C16EE22008DF6EC /* ios_library.m */; };
 		AE3730611C16EE5D008DF6EC /* ColorHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE3730601C16EE5D008DF6EC /* ColorHelper.swift */; };
+		AE3730651C16F079008DF6EC /* Motivation.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE3730641C16F079008DF6EC /* Motivation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -31,6 +32,7 @@
 		AE3730571C16EE22008DF6EC /* ios_library.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ios_library.m; sourceTree = "<group>"; };
 		AE37305F1C16EE5C008DF6EC /* ios_library-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ios_library-Bridging-Header.h"; sourceTree = "<group>"; };
 		AE3730601C16EE5D008DF6EC /* ColorHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorHelper.swift; sourceTree = "<group>"; };
+		AE3730641C16F079008DF6EC /* Motivation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Motivation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,8 @@
 		AE3730541C16EE22008DF6EC /* ios_library */ = {
 			isa = PBXGroup;
 			children = (
+				AE3730631C16F060008DF6EC /* Motivation */,
+				AE3730621C16F03D008DF6EC /* Calendar */,
 				AE37305E1C16EE46008DF6EC /* Color */,
 				AE3730551C16EE22008DF6EC /* ios_library.h */,
 				AE3730571C16EE22008DF6EC /* ios_library.m */,
@@ -77,6 +81,21 @@
 				AE37305F1C16EE5C008DF6EC /* ios_library-Bridging-Header.h */,
 			);
 			name = Color;
+			sourceTree = "<group>";
+		};
+		AE3730621C16F03D008DF6EC /* Calendar */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Calendar;
+			sourceTree = "<group>";
+		};
+		AE3730631C16F060008DF6EC /* Motivation */ = {
+			isa = PBXGroup;
+			children = (
+				AE3730641C16F079008DF6EC /* Motivation.swift */,
+			);
+			name = Motivation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,6 +156,7 @@
 			files = (
 				AE3730581C16EE22008DF6EC /* ios_library.m in Sources */,
 				AE3730611C16EE5D008DF6EC /* ColorHelper.swift in Sources */,
+				AE3730651C16F079008DF6EC /* Motivation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
