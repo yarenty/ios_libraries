@@ -8,12 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		AE3730761C16F3A0008DF6EC /* ios_library.h in Headers */ = {isa = PBXBuildFile; fileRef = AE3730751C16F3A0008DF6EC /* ios_library.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AE3730801C16F462008DF6EC /* CalendarHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE37307D1C16F462008DF6EC /* CalendarHelper.swift */; };
+		AE3730811C16F462008DF6EC /* ColorHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE37307E1C16F462008DF6EC /* ColorHelper.swift */; };
+		AE3730821C16F462008DF6EC /* Motivation.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE37307F1C16F462008DF6EC /* Motivation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		AE3730721C16F3A0008DF6EC /* ios_library.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ios_library.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE3730751C16F3A0008DF6EC /* ios_library.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ios_library.h; sourceTree = "<group>"; };
 		AE3730771C16F3A0008DF6EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AE37307D1C16F462008DF6EC /* CalendarHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarHelper.swift; sourceTree = "<group>"; };
+		AE37307E1C16F462008DF6EC /* ColorHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorHelper.swift; sourceTree = "<group>"; };
+		AE37307F1C16F462008DF6EC /* Motivation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Motivation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,10 +52,37 @@
 		AE3730741C16F3A0008DF6EC /* ios_library */ = {
 			isa = PBXGroup;
 			children = (
+				AE3730851C16F4D2008DF6EC /* MotivationData */,
+				AE3730841C16F4C6008DF6EC /* UIColor */,
+				AE3730831C16F4BA008DF6EC /* calendar */,
 				AE3730751C16F3A0008DF6EC /* ios_library.h */,
 				AE3730771C16F3A0008DF6EC /* Info.plist */,
 			);
 			path = ios_library;
+			sourceTree = "<group>";
+		};
+		AE3730831C16F4BA008DF6EC /* calendar */ = {
+			isa = PBXGroup;
+			children = (
+				AE37307D1C16F462008DF6EC /* CalendarHelper.swift */,
+			);
+			name = calendar;
+			sourceTree = "<group>";
+		};
+		AE3730841C16F4C6008DF6EC /* UIColor */ = {
+			isa = PBXGroup;
+			children = (
+				AE37307E1C16F462008DF6EC /* ColorHelper.swift */,
+			);
+			name = UIColor;
+			sourceTree = "<group>";
+		};
+		AE3730851C16F4D2008DF6EC /* MotivationData */ = {
+			isa = PBXGroup;
+			children = (
+				AE37307F1C16F462008DF6EC /* Motivation.swift */,
+			);
+			name = MotivationData;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -130,6 +163,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AE3730801C16F462008DF6EC /* CalendarHelper.swift in Sources */,
+				AE3730811C16F462008DF6EC /* ColorHelper.swift in Sources */,
+				AE3730821C16F462008DF6EC /* Motivation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -228,6 +264,7 @@
 		AE37307B1C16F3A0008DF6EC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -238,12 +275,14 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.yarenty.ios-library";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		AE37307C1C16F3A0008DF6EC /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
