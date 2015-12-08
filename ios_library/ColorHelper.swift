@@ -60,4 +60,8 @@ extension UIColor {
         return UIColor(hex: 0xFF9500)
     }
     
+    class func cosmicLatte() -> UIColor {
+        return UIColor(hex: 0xFFF8E6)
+    }
+    
 }
