@@ -47,6 +47,11 @@ class CalendarHelper {
         return _numberOfDaysInMonth
     }
     
+    //start with current date
+    init() {
+        processCalendar()
+    }
+    
     /**
      Returns number of day in week: 0 - Monday, 6-Sunday
      Input: yyyy-MM-dd
