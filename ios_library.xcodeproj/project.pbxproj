@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		AE3730561C16EE22008DF6EC /* ios_library.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = AE3730551C16EE22008DF6EC /* ios_library.h */; };
 		AE3730581C16EE22008DF6EC /* ios_library.m in Sources */ = {isa = PBXBuildFile; fileRef = AE3730571C16EE22008DF6EC /* ios_library.m */; };
+		AE3730611C16EE5D008DF6EC /* ColorHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE3730601C16EE5D008DF6EC /* ColorHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -28,6 +29,8 @@
 		AE3730521C16EE22008DF6EC /* libios_library.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libios_library.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE3730551C16EE22008DF6EC /* ios_library.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ios_library.h; sourceTree = "<group>"; };
 		AE3730571C16EE22008DF6EC /* ios_library.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ios_library.m; sourceTree = "<group>"; };
+		AE37305F1C16EE5C008DF6EC /* ios_library-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ios_library-Bridging-Header.h"; sourceTree = "<group>"; };
+		AE3730601C16EE5D008DF6EC /* ColorHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorHelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,10 +63,20 @@
 		AE3730541C16EE22008DF6EC /* ios_library */ = {
 			isa = PBXGroup;
 			children = (
+				AE37305E1C16EE46008DF6EC /* Color */,
 				AE3730551C16EE22008DF6EC /* ios_library.h */,
 				AE3730571C16EE22008DF6EC /* ios_library.m */,
 			);
 			path = ios_library;
+			sourceTree = "<group>";
+		};
+		AE37305E1C16EE46008DF6EC /* Color */ = {
+			isa = PBXGroup;
+			children = (
+				AE3730601C16EE5D008DF6EC /* ColorHelper.swift */,
+				AE37305F1C16EE5C008DF6EC /* ios_library-Bridging-Header.h */,
+			);
+			name = Color;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -123,6 +136,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AE3730581C16EE22008DF6EC /* ios_library.m in Sources */,
+				AE3730611C16EE5D008DF6EC /* ColorHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -212,18 +226,25 @@
 		AE37305C1C16EE22008DF6EC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "ios_library/ios_library-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		AE37305D1C16EE22008DF6EC /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "ios_library/ios_library-Bridging-Header.h";
 			};
 			name = Release;
 		};
