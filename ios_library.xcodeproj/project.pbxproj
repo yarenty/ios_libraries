@@ -11,6 +11,7 @@
 		AE3730801C16F462008DF6EC /* CalendarHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE37307D1C16F462008DF6EC /* CalendarHelper.swift */; };
 		AE3730811C16F462008DF6EC /* ColorHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE37307E1C16F462008DF6EC /* ColorHelper.swift */; };
 		AE3730821C16F462008DF6EC /* Motivation.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE37307F1C16F462008DF6EC /* Motivation.swift */; };
+		AE3730881C16F8ED008DF6EC /* CSVParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE3730871C16F8ED008DF6EC /* CSVParser.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +21,7 @@
 		AE37307D1C16F462008DF6EC /* CalendarHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarHelper.swift; sourceTree = "<group>"; };
 		AE37307E1C16F462008DF6EC /* ColorHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorHelper.swift; sourceTree = "<group>"; };
 		AE37307F1C16F462008DF6EC /* Motivation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Motivation.swift; sourceTree = "<group>"; };
+		AE3730871C16F8ED008DF6EC /* CSVParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CSVParser.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +54,7 @@
 		AE3730741C16F3A0008DF6EC /* ios_library */ = {
 			isa = PBXGroup;
 			children = (
+				AE3730861C16F8DB008DF6EC /* CSV */,
 				AE3730851C16F4D2008DF6EC /* MotivationData */,
 				AE3730841C16F4C6008DF6EC /* UIColor */,
 				AE3730831C16F4BA008DF6EC /* calendar */,
@@ -83,6 +86,14 @@
 				AE37307F1C16F462008DF6EC /* Motivation.swift */,
 			);
 			name = MotivationData;
+			sourceTree = "<group>";
+		};
+		AE3730861C16F8DB008DF6EC /* CSV */ = {
+			isa = PBXGroup;
+			children = (
+				AE3730871C16F8ED008DF6EC /* CSVParser.swift */,
+			);
+			name = CSV;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -128,6 +139,7 @@
 				TargetAttributes = {
 					AE3730711C16F3A0008DF6EC = {
 						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = 5G5D4E3Z2E;
 					};
 				};
 			};
@@ -166,6 +178,7 @@
 				AE3730801C16F462008DF6EC /* CalendarHelper.swift in Sources */,
 				AE3730811C16F462008DF6EC /* ColorHelper.swift in Sources */,
 				AE3730821C16F462008DF6EC /* Motivation.swift in Sources */,
+				AE3730881C16F8ED008DF6EC /* CSVParser.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -264,7 +277,9 @@
 		AE37307B1C16F3A0008DF6EC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = NO;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -282,7 +297,9 @@
 		AE37307C1C16F3A0008DF6EC /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = NO;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -315,6 +332,7 @@
 				AE37307C1C16F3A0008DF6EC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
